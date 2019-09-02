@@ -90,7 +90,14 @@ sys_uptime(void)
   return xticks;
 }
 
+// implementación shutdown en nivel SO (actividad 26/08/19)
 int sys_shutdown(void) {
     outw(0x604, 0x2000);
+    return 0;
+}
+
+// implementación reboot en nivel SO (tarea 02/09/19)
+int sys_reboot(void) {
+    outb(0x64, 0xFE);
     return 0;
 }
