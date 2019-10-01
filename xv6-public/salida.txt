@@ -1,0 +1,8 @@
+reboot.c:// codigo fuente del syscall reboot
+syscall.c:#include "syscall.h"
+syscall.c:static int (*syscalls[])(void) = {
+syscall.c:syscall(void)
+syscall.c:  if(num > 0 && num < NELEM(syscalls) && syscalls[num]) {
+syscall.c:    curproc->tf->eax = syscalls[num]();
+trap.c:    syscall();
+usertests.c:#include "syscall.h"
