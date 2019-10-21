@@ -8,7 +8,7 @@ main(int argc, char **argv)
   int i;
 
   if(argc < 2){
-    printf(2, "usage: sleep seconds...\n");
+    printf(2, "usage: sleep for seconds...\n");
     exit();
   }
 
