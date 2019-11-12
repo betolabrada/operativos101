@@ -19,9 +19,9 @@ int main(int argc, char **argv)
     {
         printf("Archivo %s borrado exitosamente\n", file1);
     }
-    else {
+    else 
     {
         printf("Hay un problema\n");
     }
-    }
+    return 0;
 }
